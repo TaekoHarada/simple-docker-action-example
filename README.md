@@ -8,4 +8,5 @@ Upload Artifacts / Notifications: Any defined artifacts are uploaded, and notifi
 Log Results: GitHub logs the results of the workflow execution.
 
 1. Run .github/workflows/test.yml
-2. Inside test.yml, it execute Dokerfile and action.yml
+2. Inside test.yml, it execute action.yml
+3. Inside action.yml, it execute Dockerfile
