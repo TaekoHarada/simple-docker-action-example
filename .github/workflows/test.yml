@@ -13,3 +13,5 @@ jobs:
         uses: ./ # action.yml in the root
         with: # This section passes input parameters to the Docker action.
           who-to-greet: "Mona the Octocat"
+        env:
+          MY_SECRET_API_KEY: ${{ secrets.MY_SECRET_API_KEY }} # Pass the secret
