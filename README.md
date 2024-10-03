@@ -7,4 +7,5 @@ Run Docker Container: The action runs inside the container, executing the specif
 Upload Artifacts / Notifications: Any defined artifacts are uploaded, and notifications may be sent.
 Log Results: GitHub logs the results of the workflow execution.
 
-test
+1. Run .github/workflows/test.yml
+2. Inside test.yml, it execute Dokerfile and action.yml

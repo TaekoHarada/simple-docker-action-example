@@ -10,6 +10,6 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run Hello World Action
-        uses: ./ # This assumes the action is in the same repository
-        with:
+        uses: ./ # action.yml in the root
+        with: # This section passes input parameters to the Docker action.
           who-to-greet: "Mona the Octocat"

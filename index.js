@@ -1,6 +1,10 @@
 // index.js
 const core = require("@actions/core");
 
+// The first two elements of process.argv are always:
+// The path to the Node.js executable (e.g., /usr/local/bin/node).
+// The path to the script being executed (e.g., /path/to/your/script.js).
+
 try {
   const nameToGreet = process.argv[2] || "World";
   console.log(`Hello ${nameToGreet}!`);
