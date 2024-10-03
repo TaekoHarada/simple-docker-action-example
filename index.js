@@ -6,6 +6,7 @@ const core = require("@actions/core");
 // The path to the script being executed (e.g., /path/to/your/script.js).
 
 try {
+  console.log(process.argv); // Add this line for debugging
   const nameToGreet = process.argv[2] || "World";
   console.log(`Hello ${nameToGreet}!`);
 
