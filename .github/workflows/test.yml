@@ -18,4 +18,4 @@ jobs:
           MY_SECRET_API_KEY: ${{ secrets.MY_SECRET_API_KEY }} # Pass the repository secret
 
       - name: Print API KEY
-        run: echo "MY_SECRET_API_KEY is $MY_SECRET_API_KEY"
+        run: echo "MY_SECRET_API_KEY is ${{ secrets.MY_SECRET_API_KEY }} "
