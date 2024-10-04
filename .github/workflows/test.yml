@@ -15,8 +15,7 @@ jobs:
           who-to-greet: "Mona the Octocat"
         env:
           MY_SECRET_API_KEY: ${{ secrets.MY_SECRET_API_KEY }} # Pass the repository secret
-          DATABASE_URL: ${{ secrets.DATABASE_URL }} # Job-specific environment variables
 
         steps:
-          - name: Print database URL
-            run: echo "Database URL is $DATABASE_URL"
+          - name: Print API KEY
+            run: echo "MY_SECRET_API_KEY is $MY_SECRET_API_KEY"
