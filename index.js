@@ -9,6 +9,9 @@ try {
   const apiKey = process.env.MY_SECRET_API_KEY;
   console.log(`Secret: ${apiKey}`);
 
+  const envVal = process.env.MY_ENV_VAL;
+  console.log(`Variable: ${envVal}`);
+
   const nameToGreet = process.argv[2] || "World";
   console.log(`Hello ${nameToGreet}!`);
 

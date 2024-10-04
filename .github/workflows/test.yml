@@ -15,7 +15,11 @@ jobs:
         with: # This section passes input parameters to the Docker action.
           who-to-greet: "Mona the Octocat"
         env:
-          MY_SECRET_API_KEY: ${{ secrets.MY_SECRET_API_KEY }} # Pass the repository secret
+          MY_SECRET_API_KEY: ${{ secrets.MY_SECRET_API_KEY }}
+          MY_ENV_VAL: ${{ vars.MY_ENV_VAL }}
 
       - name: Print API KEY
         run: echo "MY_SECRET_API_KEY is ${{ secrets.MY_SECRET_API_KEY }} "
+
+      - name: Print VAL
+        run: echo "MY_ENV_VAL is ${{ vars.MY_ENV_VAL }} "
